@@ -13,7 +13,7 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 50px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 
 }
 
@@ -257,6 +257,41 @@ body {
     color: slategray;
 }
 
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.facebook {
+    font-size: 24px;
+    color: #0371E5;
+    background-color: #021A3B;
+
+}
+
+.twitter {
+    font-size: 24px;
+    color: #0F9AFB;
+    background-color: #021A3B;
+
+}
+
+.linkedin {
+    font-size: 24px;
+    color: #E9E9EA;
+    background-color: #021A3B;
+
+}
+
+.github {
+    font-size: 24px;
+    color: white;
+    background-color: #021A3B;
+
+}
+
 
 /* media queries  */
 
@@ -288,6 +323,10 @@ body {
         display: inline-block;
 
 
+    }
+
+    .footer-section {
+        padding: 50px 0;
     }
 
     .footer-link {
@@ -344,6 +383,11 @@ body {
 
 
     }
+
+    .footer-section {
+        padding: 50px 0;
+    }
+
 
     .footer-link {
         flex-direction: column;
