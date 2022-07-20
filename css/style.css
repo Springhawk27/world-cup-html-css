@@ -6,4 +6,154 @@ body {
     font-family: 'Neucha', cursive;
     font-family: 'Nunito', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border: 1px red solid;
+
+}
+
+.top-banner {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    padding: 10px 0 0 50px;
+    background-color: rgb(2, 26, 59);
+    gap: 30px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.top-banner-title {
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.top-banner-description {
+    font-size: 1.5vw;
+}
+
+.button-primary {
+    text-decoration: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.top-image-right img {
+    width: 90%;
+    object-fit: cover;
+}
+
+
+
+.button-primary i {
+    margin-left: 10px;
+    align-self: end;
+}
+
+
+/* main section  */
+.main-section {
+    display: flex;
+    gap: 10px;
+}
+
+.main-left {
+    min-width: 275px;
+    height: 200px;
+    background-color: rgb(2, 26, 59);
+    border-radius: 10px;
+    padding: 20px 0;
+
+}
+
+.main-left:active {
+    background-color: antiquewhite;
+
+}
+
+.main-left-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 1px white solid; */
+    margin: auto 0;
+    gap: 20px;
+}
+
+.main-left-link a {
+    width: 175px;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(2, 26, 59);
+}
+
+.menu-button:active {
+    background-color: yellow;
+}
+
+.main-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.main-right-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right-inner img {
+    width: 100%;
+}
+
+
+/* footer styles  */
+.footer-section {
+    background-color: rgb(2, 26, 59);
+    padding: 100px 0;
+}
+
+.footer-section h1 {
+    text-align: center;
+    color: rgb(246, 83, 23);
+}
+
+.footer-line {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 140px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: slategray;
 }
