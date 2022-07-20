@@ -83,10 +83,11 @@ body {
 
 }
 
-.main-left:active {
-    background-color: antiquewhite;
-
+#blog-button {
+    background-color: orangered;
+    color: white;
 }
+
 
 .main-left-link {
     display: flex;
@@ -109,9 +110,7 @@ body {
     color: rgb(2, 26, 59);
 }
 
-.menu-button:active {
-    background-color: yellow;
-}
+
 
 .main-right {
     display: grid;
@@ -122,11 +121,92 @@ body {
 .main-right-inner {
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(243, 243, 251);
+    border-radius: 5px;
 }
 
 .main-right-inner img {
     width: 100%;
 }
+
+.main-right-inner-description {
+    padding: 20px;
+}
+
+.transfer-button {
+    text-decoration: none;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #161616;
+
+
+}
+
+.time-comment span {
+    margin-right: 30px;
+}
+
+.time-comment-icon {
+    margin-right: 10px;
+}
+
+/* for match page */
+
+#upcoming-match-button {
+    background-color: orangered;
+    color: white;
+}
+
+
+
+.main-right-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.main-right-inner-match {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(243, 243, 251);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-right-inner-flag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-right-inner-flag img {
+    width: 100%;
+}
+
+.country-name {
+    font-size: 1.5vw;
+    color: #161616;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+
+}
+
+.match-date {
+    font-size: 1.2vw;
+    color: #4D4D4D;
+    font-weight: 400;
+    margin: 0;
+
+
+}
+
 
 
 /* footer styles  */
