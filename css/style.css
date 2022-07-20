@@ -1,6 +1,7 @@
 /* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Neucha&family=Nunito:wght@500&family=Poppins:wght@500&display=swap');
 
+/* body style  */
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Neucha', cursive;
@@ -9,6 +10,8 @@ body {
     margin: 0;
 }
 
+
+/* container style for all section  */
 .container {
     width: 90%;
     margin: 0 auto;
@@ -17,6 +20,8 @@ body {
 
 }
 
+
+/* top banner style  */
 .top-banner {
     margin-top: 30px;
     color: white;
@@ -55,12 +60,73 @@ body {
     font-size: 1.5vw;
 }
 
+
+/* animation for top banner section  */
+@keyframes bounce {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    20% {
+        top: 350px;
+        left: 50px;
+        height: 70px;
+    }
+
+    40% {
+        top: 200px;
+        left: 100px;
+        height: 80px;
+
+    }
+
+    60% {
+        top: 350px;
+        left: 150px;
+        height: 70px;
+
+    }
+
+    80% {
+        top: 250px;
+        left: 200px;
+        height: 80px;
+
+    }
+
+    100% {
+        top: 350px;
+        left: 250px;
+        height: 70px;
+
+    }
+}
+
+.top-image-right:hover .ball {
+    display: block;
+
+    animation: bounce 2.5s ease-in 0s 1 alternate;
+}
+
+.top-image-right:hover {
+
+    transform: skew(10deg, 10deg);
+    transition: transform 3s;
+}
+
+.ball {
+    display: none;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 0px;
+}
+
 .top-image-right img {
     width: 90%;
     object-fit: cover;
 }
-
-
 
 .button-primary i {
     margin-left: 10px;
@@ -68,7 +134,7 @@ body {
 }
 
 
-/* main section  */
+/* main section style */
 .main-section {
     display: flex;
     gap: 10px;
@@ -110,8 +176,6 @@ body {
     color: rgb(2, 26, 59);
 }
 
-
-
 .main-right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,8 +203,6 @@ body {
     border-radius: 5px;
     padding: 5px 20px;
     color: #161616;
-
-
 }
 
 .time-comment span {
@@ -152,13 +214,10 @@ body {
 }
 
 /* for match page */
-
 #upcoming-match-button {
     background-color: orangered;
     color: white;
 }
-
-
 
 .main-right-match {
     display: grid;
@@ -203,8 +262,6 @@ body {
     color: #4D4D4D;
     font-weight: 400;
     margin: 0;
-
-
 }
 
 /* view all button */
@@ -213,7 +270,6 @@ body {
 }
 
 .button-view-all {
-    /* visibility: hidden; */
     display: none;
     align-self: center;
     text-decoration: none;
@@ -221,12 +277,11 @@ body {
     background-color: tomato;
     padding: 10px 20px;
     border-radius: 5px;
-
 }
 
 
 
-/* footer styles  */
+/* footer style */
 .footer-section {
     background-color: rgb(2, 26, 59);
     padding: 100px 0;
@@ -257,6 +312,7 @@ body {
     color: slategray;
 }
 
+/* footer social links  */
 .social-link {
     display: flex;
     justify-content: center;
@@ -295,6 +351,8 @@ body {
 
 /* media queries  */
 
+
+/* media queries for medium(tablet) sized device  */
 @media only screen and (min-width: 668px) and (max-width: 992px) {
     .main-section {
         flex-direction: column;
@@ -322,7 +380,6 @@ body {
     .button-view-all {
         display: inline-block;
 
-
     }
 
     .footer-section {
@@ -337,12 +394,12 @@ body {
 
 }
 
+/* media queries for small(phone) sized device  */
 @media only screen and (max-width: 668px) {
 
     .top-banner {
         flex-direction: column;
         margin-top: 10px;
-
         border-radius: 10px;
         padding: 20px;
         background-color: rgb(2, 26, 59);
@@ -378,6 +435,17 @@ body {
 
     }
 
+    .country-name {
+        font-size: 2.5vw;
+
+
+    }
+
+    .match-date {
+        font-size: 2vw;
+
+    }
+
     .button-view-all {
         display: none;
 
@@ -393,6 +461,5 @@ body {
         flex-direction: column;
 
     }
-
 
 }
