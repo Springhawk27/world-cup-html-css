@@ -246,7 +246,7 @@ body {
 }
 
 .main-right-inner-flag img {
-    width: 100%;
+    width: 50%;
 }
 
 .country-name {
@@ -437,19 +437,14 @@ body {
 
     .country-name {
         font-size: 2.5vw;
-
-
     }
 
     .match-date {
         font-size: 2vw;
-
     }
 
     .button-view-all {
         display: none;
-
-
     }
 
     .footer-section {
