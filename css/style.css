@@ -1,0 +1,9 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Neucha&family=Nunito:wght@500&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Neucha', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
