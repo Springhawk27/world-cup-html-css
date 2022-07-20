@@ -12,13 +12,13 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     border: 1px red solid;
 
 }
 
 .top-banner {
-    margin-top: 50px;
+    margin-top: 30px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -207,6 +207,23 @@ body {
 
 }
 
+/* view all button */
+.view-all-button-main {
+    text-align: center;
+}
+
+.button-view-all {
+    /* visibility: hidden; */
+    display: none;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
 
 
 /* footer styles  */
@@ -229,11 +246,109 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 
 }
 
 .footer-link a {
     text-decoration: none;
     color: slategray;
+}
+
+
+/* media queries  */
+
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .main-left {
+        height: fit-content;
+        background-color: white;
+
+    }
+
+    .main-left-link {
+        flex-direction: row;
+    }
+
+    .main-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-right-match {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .button-view-all {
+        display: inline-block;
+
+
+    }
+
+    .footer-link {
+        gap: 10px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 668px) {
+
+    .top-banner {
+        flex-direction: column;
+        margin-top: 10px;
+
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgb(2, 26, 59);
+        gap: 30px;
+
+    }
+
+    .half-width {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    .main-left {
+        height: fit-content;
+        background-color: white;
+
+    }
+
+    .main-left-link {
+        flex-direction: column;
+    }
+
+    .main-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-right-match {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .button-view-all {
+        display: none;
+
+
+    }
+
+    .footer-link {
+        flex-direction: column;
+
+    }
+
+
 }
